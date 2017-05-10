@@ -1,0 +1,222 @@
+
+C731@24088JNBITD936L MINGW32 ~
+$ cd
+
+c726201@24088JNBITD936L MINGW32 ~
+$ cd BankAccount/
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount
+$ git init
+Initialized empty Git repository in C:/Users/c726201/BankAccount/.git/
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Bank/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git add .
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status -s
+A  Bank/pom.xml
+A  Bank/src/main/java/com/wipro/bank/assessment/App.java
+A  Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git commit -m "initial commit"
+[master (root-commit) 5d1d31a] initial commit
+ 3 files changed, 69 insertions(+)
+ create mode 100644 Bank/pom.xml
+ create mode 100644 Bank/src/main/java/com/wipro/bank/assessment/App.java
+ create mode 100644 Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+nothing to commit, working directory clean
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git log
+commit 5d1d31ae2c27a6c66590f22638c9a427719845b7
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Tue Apr 11 17:30:00 2017 +0200
+
+    initial commit
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Bank/pom.xml
+        modified:   Bank/src/main/java/com/wipro/bank/assessment/App.java
+        modified:   Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Bank/.classpath
+        Bank/.project
+        Bank/src/main/java/com/wipro/bank/entity/
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git add .
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Bank/.classpath
+        new file:   Bank/.project
+        modified:   Bank/pom.xml
+        modified:   Bank/src/main/java/com/wipro/bank/assessment/App.java
+        new file:   Bank/src/main/java/com/wipro/bank/entity/Account.java
+        modified:   Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git commit -m "Unit test updated"
+[master 0761f86] Unit test updated
+ 6 files changed, 233 insertions(+), 40 deletions(-)
+ create mode 100644 Bank/.classpath
+ create mode 100644 Bank/.project
+ create mode 100644 Bank/src/main/java/com/wipro/bank/entity/Account.java
+ rewrite Bank/src/test/java/com/wipro/bank/assessment/AppTest.java (94%)
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   Bank/src/main/java/com/wipro/bank/assessment/App.java
+        modified:   Bank/src/main/java/com/wipro/bank/entity/Account.java
+        modified:   Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git add .
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   Bank/src/main/java/com/wipro/bank/assessment/App.java
+        modified:   Bank/src/main/java/com/wipro/bank/entity/Account.java
+        modified:   Bank/src/test/java/com/wipro/bank/assessment/AppTest.java
+
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git commit -m "App class Updated"
+[master ee2ca17] App class Updated
+ 3 files changed, 38 insertions(+), 46 deletions(-)
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git log
+commit ee2ca17ba7c31659bb8f9f91d0154a65272d6ed8
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    App class Updated
+
+commit 0761f86418f8a12b1f1a161ff17ed5fe8864164f
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    Unit test updated
+
+commit 5d1d31ae2c27a6c66590f22638c9a427719845b7
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    initial commit
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+        Bank/target/
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git add .
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        new file:   Bank/target/classes/com/wipro/bank/assessment/App.class
+        new file:   Bank/target/classes/com/wipro/bank/entity/Account.class
+        new file:   Bank/target/surefire-reports/TEST-com.wipro.bank.assessment.
+AppTest.xml
+        new file:   Bank/target/surefire-reports/com.wipro.bank.assessment.AppTe
+st.txt
+        new file:   Bank/target/test-classes/com/wipro/bank/assessment/AppTest.c
+lass
+
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git commit -m "Final commit"
+[master ca36880] Final commit
+ 5 files changed, 405 insertions(+)
+ create mode 100644 Bank/target/classes/com/wipro/bank/assessment/App.class
+ create mode 100644 Bank/target/classes/com/wipro/bank/entity/Account.class
+ create mode 100644 Bank/target/surefire-reports/TEST-com.wipro.bank.assessment.
+AppTest.xml
+ create mode 100644 Bank/target/surefire-reports/com.wipro.bank.assessment.AppTe
+st.txt
+ create mode 100644 Bank/target/test-classes/com/wipro/bank/assessment/AppTest.c
+lass
+
+c726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$ git log
+commit ca3688051ff76e061432dc8f764f1c91444710c1
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    Final commit
+
+commit ee2ca17ba7c31659bb8f9f91d0154a65272d6ed8
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    App class Updated
+
+commit 0761f86418f8a12b1f1a161ff17ed5fe8864164f
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    Unit test updated
+
+commit 5d1d31ae2c27a6c66590f22638c9a427719845b7
+Author: evans.phuti6 <evans.phuti61@gmail.com>
+Date:   Wed May 10 08:45:16 2017 +0200
+
+    initial commit
+
+C726201@24088JNBITD936L  MINGW32 ~/BankAccount (master)
+$
